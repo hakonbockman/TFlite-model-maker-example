@@ -50,18 +50,19 @@ def plot_before_classifing(self, data):
 
 
 # PATH TO PICTURES
-image_path_flowers = tf.keras.utils.get_file( 'flower_photos',
-    'https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz',  untar=True)
+#image_path_flowers = tf.keras.utils.get_file( 'flower_photos',
+#    'https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz',  untar=True)
 
 
-image_path_storlidalen_21_08_2019 = './Storlidalen 21-22 08 2019/Storlidalen 21-22 08 2019/'
-image_path_IR_Storlidalen_25_10_2019_combined = './pictures/Flyving Storlidalen 25-10-2019/combined/IR' # 4% NEGATIVE 96% POSITIVE
-image_path_VISUAL_Storlidalen_25_10_2019_combined = './pictures/Flyving Storlidalen 25-10-2019/combined/Visual' # 4.9% NEGATIVE 95.1% POSITIVE
+#image_path_storlidalen_21_08_2019 = './Storlidalen 21-22 08 2019/Storlidalen 21-22 08 2019/'
+
+image_path_IR_combined = '../Saue_Bilder/Combined/IR' 
+image_path_VISUAL_combined = '../Saue_Bilder/Combined/Visual' 
 
 
 
 # LOADING THE IMAGES
-data = ImageClassifierDataLoader.from_folder(image_path_IR_Storlidalen_25_10_2019_combined)
+data = ImageClassifierDataLoader.from_folder(image_path_VISUAL_combined)
 
 # TODO Normalize pictures
 
@@ -79,7 +80,7 @@ validation_data, test_data = rest_data.split(0.5)       # Test = 10%  # Validati
 
 model = image_classifier.create( 
     train_data,                                         # Training Data
-    model_spec=model_spec.efficientnet_lite4_spec,      # Model/Architecture/Algorithm used
+    model_spec=model_spec.efficientnet_lite1_spec,      # Model/Architecture/Algorithm used
     validation_data=validation_data,                     # Validation data
     #batch_size=2,
     #'''
