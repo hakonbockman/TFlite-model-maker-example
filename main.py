@@ -56,9 +56,8 @@ def plot_before_classifing(self, data):
 
 #image_path_storlidalen_21_08_2019 = './Storlidalen 21-22 08 2019/Storlidalen 21-22 08 2019/'
 
-image_path_IR_combined = '../Saue_Bilder/Combined/IR' 
-image_path_VISUAL_combined = '../Saue_Bilder/Combined/Visual' 
-
+image_path_IR_combined = '../saue bilder/Combined/IR'
+image_path_VISUAL_combined = '../saue bilder/Combined/Visual'
 
 
 # LOADING THE IMAGES
