@@ -1,7 +1,6 @@
 import numpy as np
 
 import tensorflow as tf
-assert tf.__version__.startswith('2')
 
 from tflite_model_maker import configs
 from tflite_model_maker import ExportFormat
@@ -10,6 +9,10 @@ from tflite_model_maker import ImageClassifierDataLoader
 from tflite_model_maker import model_spec
 
 import matplotlib.pyplot as plt
+
+print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('GPU')))
+
+
 
 def plot_classified_images(self):
 
@@ -73,23 +76,26 @@ validation_data, test_data = rest_data.split(0.5)       # Test = 10%  # Validati
 
 
 
-
-
-    
+# SPECS
+model_spec = model_spec.efficientnet_lite0_spec
+validation_data = validation_data
+batch_size = 256
+epochs = 10
+dropout_rate = 0.5
+learning_rate = 0.0002
+shuffle = True
+train_whole_model = False
 
 model = image_classifier.create( 
     train_data,                                         # Training Data
-    model_spec=model_spec.efficientnet_lite1_spec,      # Model/Architecture/Algorithm used
-    validation_data=validation_data,                     # Validation data
-    #batch_size=2,
-    #'''
-    #train_whole_model=True,
-    #learning_rate=0.0002,
-    #'''
-    #epochs=300,
-    #shuffle=True,
-    #dropout_rate=0.5
-   
+    model_spec=model_spec,                              # Model/Architecture/Algorithm used
+    validation_data=validation_data,                    # Validation data
+    batch_size=batch_size,
+    epochs=epochs,
+    learning_rate=learning_rate,
+    dropout_rate=dropout_rate,
+    shuffle=shuffle,
+    train_whole_model=train_whole_model,
     )
 
 
@@ -102,15 +108,15 @@ loss, accuracy = model.evaluate(test_data)
 
 model.export(
     # Exporting
-    export_dir='/export', 
-    label_filename='/export/sheep_labels',
-    export_format=ExportFormat.LABEL,
+    export_dir='.', 
+    label_filename='sheep_labels',
+    export_format=ExportFormat.SAVED_MODEL,
     
     overwrite=True, 
     # Saving
-    saved_model_filename='/export/tflite_sheep_classiification_model_saved',
+    saved_model_filename='tflite_sheep_classiification_model_saved',
     
 )
 
-model.evaluate_tflite('model.tflite', test_data)
-
+model.evaluate_tflite('model.tflite', batch_size)
+model.evaluate
