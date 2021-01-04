@@ -79,7 +79,7 @@ validation_data, test_data = rest_data.split(0.5)       # Test = 10%  # Validati
 # SPECS
 model_spec = model_spec.efficientnet_lite0_spec
 validation_data = validation_data
-batch_size = 256
+batch_size = 128
 epochs = 10
 dropout_rate = 0.5
 learning_rate = 0.0002
