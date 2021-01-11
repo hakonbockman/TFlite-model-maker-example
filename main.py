@@ -14,7 +14,7 @@ print("Num GPUs Available: ", len(tf.config.experimental.list_physical_devices('
 
 
 
-def plot_classified_images(self):
+def plot_classified_images():
 
     # Helper function that returns "red or black" depending on if its two input parameters mathces or not
     def get_label_color(val1, val2):
@@ -40,7 +40,7 @@ def plot_classified_images(self):
         plt.xlabel('Predicted: %s' % predict_label)
     plt.show()
 
-def plot_before_classifing(self, data):
+def plot_before_classifing(data):
     plt.figure(figsize=( float(10), float(10) )) # needs to be 2 floats or else it crashes
     for i, (image, label) in enumerate( data.dataset.take(25)):
         plt.subplot(5, 5, i + 1)
@@ -74,17 +74,15 @@ data = ImageClassifierDataLoader.from_folder(image_path_VISUAL_combined)
 train_data, rest_data = data.split(0.8)                 # Training  = 80%
 validation_data, test_data = rest_data.split(0.5)       # Test = 10%  # Validating = 10%
 
-
-
-# SPECS
-model_spec = model_spec.efficientnet_lite0_spec
-validation_data = validation_data
-batch_size = 128
-epochs = 10
+# SPECS                                                 # IMAGE CLASSIFICATION NETWORKS
+model_spec = model_spec.mobilenet_v2_spec               # 'efficientnet_lite0', 'efficientnet_lite1', 
+validation_data = validation_data                       # 'efficientnet_lite2','efficientnet_lite3', 
+batch_size = 128                                        # 'efficientnet_lite4', 'mobilenet_v2', 'resnet_50'
+epochs = 5
 dropout_rate = 0.5
 learning_rate = 0.0002
 shuffle = True
-train_whole_model = False
+#train_whole_model_ = False
 
 model = image_classifier.create( 
     train_data,                                         # Training Data
@@ -92,19 +90,17 @@ model = image_classifier.create(
     validation_data=validation_data,                    # Validation data
     batch_size=batch_size,
     epochs=epochs,
-    learning_rate=learning_rate,
+    #learning_rate=learning_rate,
     dropout_rate=dropout_rate,
-    shuffle=shuffle,
-    train_whole_model=train_whole_model,
+    shuffle=True,
+    train_whole_model=False
     )
-
-
 
 model.summary()
 
 loss, accuracy = model.evaluate(test_data)
 
-
+plot_classified_images()
 
 model.export(
     # Exporting
@@ -118,5 +114,16 @@ model.export(
     
 )
 
-model.evaluate_tflite('model.tflite', batch_size)
+
+
+# picking out the pitctures that are tested and beilieved to be sheeps
+#predicts = model.predict_top_k(test_data)
+
+#for i, (image, label) in enumerate(test_data.gen_dataset().unbatch().take()):
+
+
+
+
+
+#model.evaluate_tflite('model.tflite', batch_size)
 model.evaluate
