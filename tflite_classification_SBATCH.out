@@ -1,368 +1,68 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"CUDA/10.1.243"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "CUDA/10.1.243"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"OpenMPI/3.1.4"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "OpenMPI/3.1.4"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"cuDNN/7.6.4.38"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "cuDNN/7.6.4.38"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"Python/3.7.4"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore-cache load "Python/3.7.4"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
 
 Currently Loaded Modules:
-  1) GCCcore/.8.3.0 (H)   6) cuDNN/7.6.4.38        11) GMP/.6.1.2    (H)
-  2) zlib/.1.2.11   (H)   7) bzip2/.1.0.8     (H)  12) libffi/.3.2.1 (H)
-  3) binutils/.2.32 (H)   8) ncurses/.6.1     (H)  13) Python/3.7.4
-  4) GCC/8.3.0            9) libreadline/.8.0 (H)
-  5) CUDA/10.1.243       10) XZ/.5.2.4        (H)
+  1) GCCcore/8.3.0                   3) binutils/2.32-GCCcore-8.3.0 (H)
+  2) zlib/1.2.11-GCCcore-8.3.0 (H)   4) GCC/8.3.0
 
   Where:
    H:  Hidden Module
 
  
 
-Python 3.7.4
-pip 19.2.3 from /lustre1/apps/software/Python/3.7.4-GCCcore-8.3.0/lib/python3.7/site-packages/pip-19.2.3-py3.7.egg/pip (python 3.7)
-pip 20.3.1 from /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages/pip (python 3.7)
-Requirement already satisfied: tflite-model-maker==0.2.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (0.2.3)
-Requirement already satisfied: tf-estimator-nightly==2.4.0.dev2020090201 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (2.4.0.dev2020090201)
-Requirement already satisfied: flatbuffers==1.12 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.12)
-Requirement already satisfied: pillow>=7.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (8.0.1)
-Requirement already satisfied: tf-nightly==2.4.0.dev20200902 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (2.4.0.dev20200902)
-Requirement already satisfied: tensorflow-datasets>=2.1.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (4.1.0)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: sentencepiece>=0.1.91 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.1.94)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: tensorflow-hub>=0.8.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: tf-models-official==2.3.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (2.3.0)
-Requirement already satisfied: fire>=0.3.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.3.1)
-Requirement already satisfied: tflite-support==0.1.0rc3.dev2 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.1.0rc3.dev2)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: termcolor in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from fire>=0.3.1->tflite-model-maker==0.2.3) (1.1.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: termcolor in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from fire>=0.3.1->tflite-model-maker==0.2.3) (1.1.0)
-Requirement already satisfied: promise in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.3)
-Requirement already satisfied: importlib-resources in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.3.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: attrs>=18.1.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (20.3.0)
-Requirement already satisfied: dill in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (0.3.3)
-Requirement already satisfied: tensorflow-metadata in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (0.26.0)
-Requirement already satisfied: typing-extensions in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.7.4.3)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: tqdm in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (4.54.1)
-Requirement already satisfied: requests>=2.19.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.25.0)
-Requirement already satisfied: future in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (0.18.2)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: zipp>=0.4 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from importlib-resources->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.4.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: chardet<4,>=3.0.2 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests>=2.19.0->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.0.4)
-Requirement already satisfied: certifi>=2017.4.17 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests>=2.19.0->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2020.12.5)
-Requirement already satisfied: idna<3,>=2.5 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests>=2.19.0->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.10)
-Requirement already satisfied: urllib3<1.27,>=1.21.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests>=2.19.0->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (1.26.2)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: googleapis-common-protos<2,>=1.52.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-metadata->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (1.52.0)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: google-api-python-client>=1.6.7 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.12.8)
-Requirement already satisfied: tensorflow-model-optimization>=0.2.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.5.0)
-Requirement already satisfied: tensorflow-hub>=0.8.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: tf-slim>=1.1.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.1.0)
-Requirement already satisfied: tensorflow-datasets>=2.1.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (4.1.0)
-Requirement already satisfied: psutil>=5.4.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (5.7.3)
-Requirement already satisfied: pyyaml in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (5.3.1)
-Requirement already satisfied: gin-config in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.4.0)
-Requirement already satisfied: tensorflow>=2.3.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.3.0)
-Requirement already satisfied: opencv-python-headless in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (4.4.0.46)
-Requirement already satisfied: py-cpuinfo>=3.3.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (7.0.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: Cython in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.29.21)
-Requirement already satisfied: sentencepiece>=0.1.91 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.1.94)
-Requirement already satisfied: google-cloud-bigquery>=0.31.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.6.1)
-Requirement already satisfied: pillow>=7.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (8.0.1)
-Requirement already satisfied: tensorflow-addons in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.11.2)
-Requirement already satisfied: dataclasses in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.6)
-Requirement already satisfied: kaggle>=1.3.9 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.5.10)
-Requirement already satisfied: pandas>=0.22.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.1.5)
-Requirement already satisfied: scipy>=0.19.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.4.1)
-Requirement already satisfied: matplotlib in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (3.3.3)
-Requirement already satisfied: google-auth>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.24.0)
-Requirement already satisfied: google-auth-httplib2>=0.0.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.0.4)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: httplib2<1dev,>=0.15.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.18.1)
-Requirement already satisfied: google-api-core<2dev,>=1.21.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.23.0)
-Requirement already satisfied: uritemplate<4dev,>=3.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (3.0.1)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: setuptools>=34.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core<2dev,>=1.21.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (51.0.0)
-Requirement already satisfied: google-auth>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.24.0)
-Requirement already satisfied: requests>=2.19.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.25.0)
-Requirement already satisfied: pytz in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core<2dev,>=1.21.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2020.4)
-Requirement already satisfied: googleapis-common-protos<2,>=1.52.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-metadata->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (1.52.0)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: rsa<5,>=3.1.4 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-auth>=1.16.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (4.6)
-Requirement already satisfied: pyasn1-modules>=0.2.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-auth>=1.16.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.2.8)
-Requirement already satisfied: setuptools>=34.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core<2dev,>=1.21.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (51.0.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: cachetools<5.0,>=2.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-auth>=1.16.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (4.2.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: httplib2<1dev,>=0.15.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.18.1)
-Requirement already satisfied: google-auth>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.24.0)
-Requirement already satisfied: google-api-core[grpc]<2.0.0dev,>=1.23.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.23.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: proto-plus>=1.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.13.0)
-Requirement already satisfied: google-resumable-media<2.0dev,>=0.6.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.1.0)
-Requirement already satisfied: google-cloud-core<2.0dev,>=1.4.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.4.4)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: setuptools>=34.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core<2dev,>=1.21.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (51.0.0)
-Requirement already satisfied: google-auth>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.24.0)
-Requirement already satisfied: requests>=2.19.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.25.0)
-Requirement already satisfied: pytz in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core<2dev,>=1.21.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2020.4)
-Requirement already satisfied: googleapis-common-protos<2,>=1.52.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-metadata->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (1.52.0)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: grpcio<2.0dev,>=1.29.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core[grpc]<2.0.0dev,>=1.23.0->google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.34.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: google-crc32c<2.0dev,>=1.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-resumable-media<2.0dev,>=0.6.0->google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.0.0)
-Requirement already satisfied: cffi>=1.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-crc32c<2.0dev,>=1.0->google-resumable-media<2.0dev,>=0.6.0->google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.14.4)
-Requirement already satisfied: pycparser in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from cffi>=1.0.0->google-crc32c<2.0dev,>=1.0->google-resumable-media<2.0dev,>=0.6.0->google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.20)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: python-slugify in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from kaggle>=1.3.9->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (4.0.1)
-Requirement already satisfied: python-dateutil in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from kaggle>=1.3.9->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.8.1)
-Requirement already satisfied: requests>=2.19.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.25.0)
-Requirement already satisfied: tqdm in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (4.54.1)
-Requirement already satisfied: urllib3<1.27,>=1.21.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests>=2.19.0->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (1.26.2)
-Requirement already satisfied: certifi>=2017.4.17 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests>=2.19.0->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2020.12.5)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: cycler>=0.10 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from matplotlib->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: python-dateutil in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from kaggle>=1.3.9->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.8.1)
-Requirement already satisfied: pillow>=7.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (8.0.1)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,>=2.0.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from matplotlib->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.4.7)
-Requirement already satisfied: kiwisolver>=1.0.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from matplotlib->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.3.1)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: python-dateutil in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from kaggle>=1.3.9->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.8.1)
-Requirement already satisfied: pytz in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core<2dev,>=1.21.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2020.4)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from pyasn1-modules>=0.2.1->google-auth>=1.16.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.4.8)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: text-unidecode>=1.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from python-slugify->kaggle>=1.3.9->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.3)
-Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from pyasn1-modules>=0.2.1->google-auth>=1.16.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.4.8)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: tensorflow-estimator<2.4.0,>=2.3.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.3.0)
-Requirement already satisfied: h5py<2.11.0,>=2.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.10.0)
-Requirement already satisfied: opt-einsum>=2.3.2 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (3.3.0)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: keras-preprocessing<1.2,>=1.1.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.1.2)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: termcolor in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from fire>=0.3.1->tflite-model-maker==0.2.3) (1.1.0)
-Requirement already satisfied: google-pasta>=0.1.8 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.2.0)
-Requirement already satisfied: wheel>=0.26 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.36.2)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: gast==0.3.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.3.3)
-Requirement already satisfied: scipy>=0.19.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.4.1)
-Requirement already satisfied: grpcio<2.0dev,>=1.29.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core[grpc]<2.0.0dev,>=1.23.0->google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.34.0)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: tensorboard<3,>=2.3.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.4.0)
-Requirement already satisfied: wrapt>=1.11.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.12.1)
-Requirement already satisfied: astunparse==1.6.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.6.3)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: wheel>=0.26 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.36.2)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: requests>=2.19.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.25.0)
-Requirement already satisfied: wheel>=0.26 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.36.2)
-Requirement already satisfied: setuptools>=34.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core<2dev,>=1.21.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (51.0.0)
-Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.4.2)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.7.0)
-Requirement already satisfied: grpcio<2.0dev,>=1.29.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core[grpc]<2.0.0dev,>=1.23.0->google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.34.0)
-Requirement already satisfied: markdown>=2.6.8 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (3.3.3)
-Requirement already satisfied: google-auth>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.24.0)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: werkzeug>=0.11.15 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.0.1)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: requests-oauthlib>=0.7.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.3.0)
-Requirement already satisfied: google-auth>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.24.0)
-Requirement already satisfied: importlib-metadata in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from markdown>=2.6.8->tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (3.3.0)
-Requirement already satisfied: zipp>=0.4 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from importlib-resources->tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.4.0)
-Requirement already satisfied: typing-extensions in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.7.4.3)
-Requirement already satisfied: requests>=2.19.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.25.0)
-Requirement already satisfied: oauthlib>=3.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (3.1.0)
-Requirement already satisfied: typeguard>=2.7 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-addons->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.10.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: dm-tree~=0.1.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-model-optimization>=0.2.1->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.1.5)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: flatbuffers==1.12 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.12)
-Requirement already satisfied: tb-nightly<3.0.0a0,>=2.4.0a0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tf-nightly==2.4.0.dev20200902->tflite-model-maker==0.2.3) (2.5.0a20201214)
-Requirement already satisfied: h5py<2.11.0,>=2.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (2.10.0)
-Requirement already satisfied: opt-einsum>=2.3.2 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (3.3.0)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: keras-preprocessing<1.2,>=1.1.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.1.2)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: tf-estimator-nightly==2.4.0.dev2020090201 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (2.4.0.dev2020090201)
-Requirement already satisfied: google-pasta>=0.1.8 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.2.0)
-Requirement already satisfied: termcolor in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from fire>=0.3.1->tflite-model-maker==0.2.3) (1.1.0)
-Requirement already satisfied: typing-extensions in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.7.4.3)
-Requirement already satisfied: gast==0.3.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.3.3)
-Requirement already satisfied: wheel>=0.26 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.36.2)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: grpcio<2.0dev,>=1.29.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core[grpc]<2.0.0dev,>=1.23.0->google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.34.0)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: wrapt>=1.11.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.12.1)
-Requirement already satisfied: astunparse==1.6.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.6.3)
-Requirement already satisfied: requests>=2.19.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (2.25.0)
-Requirement already satisfied: wheel>=0.26 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.36.2)
-Requirement already satisfied: setuptools>=34.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core<2dev,>=1.21.0->google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (51.0.0)
-Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (0.4.2)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.7.0)
-Requirement already satisfied: grpcio<2.0dev,>=1.29.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-core[grpc]<2.0.0dev,>=1.23.0->google-cloud-bigquery>=0.31.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.34.0)
-Requirement already satisfied: markdown>=2.6.8 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (3.3.3)
-Requirement already satisfied: google-auth>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-api-python-client>=1.6.7->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.24.0)
-Requirement already satisfied: protobuf>=3.6.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow-datasets>=2.1.0->tflite-model-maker==0.2.3) (3.14.0)
-Requirement already satisfied: werkzeug>=0.11.15 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow>=2.3.0->tf-models-official==2.3.0->tflite-model-maker==0.2.3) (1.0.1)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: six in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from absl-py>=0.10.0->tflite-model-maker==0.2.3) (1.15.0)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-Requirement already satisfied: pybind11>=2.4 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-support==0.1.0rc3.dev2->tflite-model-maker==0.2.3) (2.6.1)
-Requirement already satisfied: numpy>=1.17.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.18.5)
-Requirement already satisfied: flatbuffers==1.12 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (1.12)
-Requirement already satisfied: absl-py>=0.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tflite-model-maker==0.2.3) (0.10.0)
-WARNING: You are using pip version 20.3.1; however, version 20.3.3 is available.
-You should consider upgrading via the '/lustre1/work/haakosbo/env/python374/bin/python -m pip install --upgrade pip' command.
-Requirement already satisfied: tensorflow==2.3.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (2.3.0)
-Requirement already satisfied: wheel>=0.26 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (0.36.2)
-Requirement already satisfied: h5py<2.11.0,>=2.10.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (2.10.0)
-Requirement already satisfied: astunparse==1.6.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.6.3)
-Requirement already satisfied: google-pasta>=0.1.8 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (0.2.0)
-Requirement already satisfied: protobuf>=3.9.2 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (3.14.0)
-Requirement already satisfied: grpcio>=1.8.6 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.34.0)
-Requirement already satisfied: numpy<1.19.0,>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.18.5)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: opt-einsum>=2.3.2 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (3.3.0)
-Requirement already satisfied: termcolor>=1.1.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.1.0)
-Requirement already satisfied: absl-py>=0.7.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (0.10.0)
-Requirement already satisfied: keras-preprocessing<1.2,>=1.1.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.1.2)
-Requirement already satisfied: wrapt>=1.11.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.12.1)
-Requirement already satisfied: tensorboard<3,>=2.3.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (2.4.0)
-Requirement already satisfied: gast==0.3.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (0.3.3)
-Requirement already satisfied: scipy==1.4.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.4.1)
-Requirement already satisfied: tensorflow-estimator<2.4.0,>=2.3.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (2.3.0)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: wheel>=0.26 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (0.36.2)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: numpy<1.19.0,>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.18.5)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: numpy<1.19.0,>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.18.5)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: numpy<1.19.0,>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.18.5)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: numpy<1.19.0,>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.18.5)
-Requirement already satisfied: google-auth<2,>=1.6.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (1.24.0)
-Requirement already satisfied: protobuf>=3.9.2 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (3.14.0)
-Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (0.4.2)
-Requirement already satisfied: wheel>=0.26 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (0.36.2)
-Requirement already satisfied: markdown>=2.6.8 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (3.3.3)
-Requirement already satisfied: requests<3,>=2.21.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (2.25.0)
-Requirement already satisfied: numpy<1.19.0,>=1.16.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.18.5)
-Requirement already satisfied: absl-py>=0.7.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (0.10.0)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: setuptools>=41.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (51.0.0)
-Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (1.7.0)
-Requirement already satisfied: grpcio>=1.8.6 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.34.0)
-Requirement already satisfied: werkzeug>=0.11.15 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (1.0.1)
-Requirement already satisfied: six>=1.12.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorflow==2.3.0) (1.15.0)
-Requirement already satisfied: rsa<5,>=3.1.4 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-auth<2,>=1.6.3->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (4.6)
-Requirement already satisfied: pyasn1-modules>=0.2.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-auth<2,>=1.6.3->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (0.2.8)
-Requirement already satisfied: cachetools<5.0,>=2.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-auth<2,>=1.6.3->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (4.2.0)
-Requirement already satisfied: setuptools>=41.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (51.0.0)
-Requirement already satisfied: google-auth<2,>=1.6.3 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (1.24.0)
-Requirement already satisfied: requests-oauthlib>=0.7.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (1.3.0)
-Requirement already satisfied: importlib-metadata in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from markdown>=2.6.8->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (3.3.0)
-Requirement already satisfied: zipp>=0.5 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from importlib-metadata->markdown>=2.6.8->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (3.4.0)
-Requirement already satisfied: typing-extensions>=3.6.4 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from importlib-metadata->markdown>=2.6.8->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (3.7.4.3)
-Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from pyasn1-modules>=0.2.1->google-auth<2,>=1.6.3->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (0.4.8)
-Requirement already satisfied: urllib3<1.27,>=1.21.1 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (1.26.2)
-Requirement already satisfied: certifi>=2017.4.17 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (2020.12.5)
-Requirement already satisfied: chardet<4,>=3.0.2 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (3.0.4)
-Requirement already satisfied: idna<3,>=2.5 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests<3,>=2.21.0->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (2.10)
-Requirement already satisfied: oauthlib>=3.0.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (3.1.0)
-Requirement already satisfied: requests<3,>=2.21.0 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from tensorboard<3,>=2.3.0->tensorflow==2.3.0) (2.25.0)
-Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /lustre1/work/haakosbo/env/python374/lib/python3.7/site-packages (from pyasn1-modules>=0.2.1->google-auth<2,>=1.6.3->tensorboard<3,>=2.3.0->tensorflow==2.3.0) (0.4.8)
-WARNING: You are using pip version 20.3.1; however, version 20.3.3 is available.
-You should consider upgrading via the '/lustre1/work/haakosbo/env/python374/bin/python -m pip install --upgrade pip' command.
+/var/slurm_spool/job218116/slurm_script: line 24: python: command not found
+/var/slurm_spool/job218116/slurm_script: /cluster/home/haakosbo/.local/bin/pip: /share/apps/software/Python/3.7.4-GCCcore-8.3.0/bin/python: bad interpreter: No such file or directory
+/var/slurm_spool/job218116/slurm_script: line 27: /lustre1/work/haakosbo/env/python374/bin/activate: No such file or directory
+/var/slurm_spool/job218116/slurm_script: /cluster/home/haakosbo/.local/bin/pip: /share/apps/software/Python/3.7.4-GCCcore-8.3.0/bin/python: bad interpreter: No such file or directory
+/var/slurm_spool/job218116/slurm_script: /cluster/home/haakosbo/.local/bin/pip: /share/apps/software/Python/3.7.4-GCCcore-8.3.0/bin/python: bad interpreter: No such file or directory
+/var/slurm_spool/job218116/slurm_script: /cluster/home/haakosbo/.local/bin/pip: /share/apps/software/Python/3.7.4-GCCcore-8.3.0/bin/python: bad interpreter: No such file or directory
 Now the Modules, Virtual Environment and Packages are loaded
 Starting to setup for SBATCH
-2021-01-04 11:09:46.641311: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
-2021-01-04 11:10:34.150826: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
-2021-01-04 11:10:35.247512: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
-pciBusID: 0000:3b:00.0 name: Tesla V100-PCIE-16GB computeCapability: 7.0
-coreClock: 1.38GHz coreCount: 80 deviceMemorySize: 15.78GiB deviceMemoryBandwidth: 836.37GiB/s
-2021-01-04 11:10:35.248395: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
-2021-01-04 11:10:35.599319: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
-2021-01-04 11:10:35.735864: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
-2021-01-04 11:10:35.884776: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
-2021-01-04 11:10:36.331319: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
-2021-01-04 11:10:36.453342: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
-2021-01-04 11:10:37.278716: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
-2021-01-04 11:10:37.280684: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
-2021-01-04 11:10:37.708249: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2021-01-04 11:10:37.866793: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2600000000 Hz
-2021-01-04 11:10:37.868456: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x630a0c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
-2021-01-04 11:10:37.868478: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
-2021-01-04 11:10:38.017848: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x631a2e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
-2021-01-04 11:10:38.017912: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-PCIE-16GB, Compute Capability 7.0
-2021-01-04 11:10:38.025753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
-pciBusID: 0000:3b:00.0 name: Tesla V100-PCIE-16GB computeCapability: 7.0
-coreClock: 1.38GHz coreCount: 80 deviceMemorySize: 15.78GiB deviceMemoryBandwidth: 836.37GiB/s
-2021-01-04 11:10:38.025801: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
-2021-01-04 11:10:38.025835: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
-2021-01-04 11:10:38.025853: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
-2021-01-04 11:10:38.025870: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
-2021-01-04 11:10:38.025887: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
-2021-01-04 11:10:38.025905: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
-2021-01-04 11:10:38.025922: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
-2021-01-04 11:10:38.026988: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
-2021-01-04 11:10:38.027052: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
-2021-01-04 11:10:39.646162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
-2021-01-04 11:10:39.647008: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
-2021-01-04 11:10:39.647028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
-2021-01-04 11:10:39.649701: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14755 MB memory) -> physical GPU (device: 0, name: Tesla V100-PCIE-16GB, pci bus id: 0000:3b:00.0, compute capability: 7.0)
-2021-01-04 11:10:46.999904: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
-2021-01-04 11:10:57.193314: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 19 of 100
-2021-01-04 11:11:07.095264: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 39 of 100
-2021-01-04 11:11:17.247907: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 59 of 100
-2021-01-04 11:11:27.465274: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 79 of 100
-2021-01-04 11:11:37.030706: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:172] Filling up shuffle buffer (this may take a while): 98 of 100
-2021-01-04 11:11:37.947591: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:221] Shuffle buffer filled.
-2021-01-04 11:13:47.231610: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
-Num GPUs Available:  1
-Model: "sequential"
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-hub_keras_layer_v1v2 (HubKer (None, 1280)              3413024   
-_________________________________________________________________
-dropout (Dropout)            (None, 1280)              0         
-_________________________________________________________________
-dense (Dense)                (None, 2)                 2562      
-=================================================================
-Total params: 3,415,586
-Trainable params: 2,562
-Non-trainable params: 3,413,024
-_________________________________________________________________
-None
-Epoch 1/10
- 1/10 [==>...........................] - ETA: 0s - loss: 0.7283 - accuracy: 0.6055 2/10 [=====>........................] - ETA: 9:09 - loss: 0.7244 - accuracy: 0.5918 3/10 [========>.....................] - ETA: 10:48 - loss: 0.7240 - accuracy: 0.5964 4/10 [===========>..................] - ETA: 10:10 - loss: 0.7238 - accuracy: 0.5967 5/10 [==============>...............] - ETA: 8:56 - loss: 0.7183 - accuracy: 0.6062  6/10 [=================>............] - ETA: 7:23 - loss: 0.7318 - accuracy: 0.5931 7/10 [====================>.........] - ETA: 5:39 - loss: 0.7358 - accuracy: 0.5887 8/10 [=======================>......] - ETA: 3:53 - loss: 0.7341 - accuracy: 0.5942 9/10 [==========================>...] - ETA: 1:59 - loss: 0.7358 - accuracy: 0.593810/10 [==============================] - ETA: 0s - loss: 0.7381 - accuracy: 0.5961  10/10 [==============================] - 1873s 187s/step - loss: 0.7381 - accuracy: 0.5961 - val_loss: 0.6395 - val_accuracy: 0.6758
-Epoch 2/10
- 1/10 [==>...........................] - ETA: 0s - loss: 0.7310 - accuracy: 0.5898 2/10 [=====>........................] - ETA: 7s - loss: 0.7055 - accuracy: 0.5957 3/10 [========>.....................] - ETA: 4:32 - loss: 0.6879 - accuracy: 0.6211 4/10 [===========>..................] - ETA: 5:47 - loss: 0.6919 - accuracy: 0.6162 5/10 [==============>...............] - ETA: 5:47 - loss: 0.6869 - accuracy: 0.6250 6/10 [=================>............] - ETA: 5:09 - loss: 0.6898 - accuracy: 0.6204 7/10 [====================>.........] - ETA: 4:15 - loss: 0.6875 - accuracy: 0.6306 8/10 [=======================>......] - ETA: 3:00 - loss: 0.6873 - accuracy: 0.6323 9/10 [==========================>...] - ETA: 1:34 - loss: 0.6829 - accuracy: 0.636710/10 [==============================] - ETA: 0s - loss: 0.6814 - accuracy: 0.6340  10/10 [==============================] - 1832s 183s/step - loss: 0.6814 - accuracy: 0.6340 - val_loss: 0.5931 - val_accuracy: 0.7383
-Epoch 3/10
- 1/10 [==>...........................] - ETA: 0s - loss: 0.6726 - accuracy: 0.6445 2/10 [=====>........................] - ETA: 7s - loss: 0.6645 - accuracy: 0.6738 3/10 [========>.....................] - ETA: 8s - loss: 0.6623 - accuracy: 0.6719 4/10 [===========>..................] - ETA: 8s - loss: 0.6466 - accuracy: 0.6826 5/10 [==============>...............] - ETA: 1:55 - loss: 0.6391 - accuracy: 0.6891 6/10 [=================>............] - ETA: 2:43 - loss: 0.6361 - accuracy: 0.6914 7/10 [====================>.........] - ETA: 2:39 - loss: 0.6370 - accuracy: 0.6853 8/10 [=======================>......] - ETA: 2:04 - loss: 0.6332 - accuracy: 0.6885 9/10 [==========================>...] - ETA: 1:09 - loss: 0.6296 - accuracy: 0.687910/10 [==============================] - ETA: 0s - loss: 0.6250 - accuracy: 0.6914  10/10 [==============================] - 2108s 211s/step - loss: 0.6250 - accuracy: 0.6914 - val_loss: 0.5535 - val_accuracy: 0.7695
-Epoch 4/10
- 1/10 [==>...........................] - ETA: 0s - loss: 0.5706 - accuracy: 0.7539 2/10 [=====>........................] - ETA: 7s - loss: 0.5943 - accuracy: 0.7344 3/10 [========>.....................] - ETA: 8s - loss: 0.5943 - accuracy: 0.7227 4/10 [===========>..................] - ETA: 8s - loss: 0.5872 - accuracy: 0.7324 5/10 [==============>...............] - ETA: 7s - loss: 0.5968 - accuracy: 0.7219 6/10 [=================>............] - ETA: 6s - loss: 0.5995 - accuracy: 0.7188 7/10 [====================>.........] - ETA: 4s - loss: 0.5982 - accuracy: 0.7193 8/10 [=======================>......] - ETA: 3s - loss: 0.5948 - accuracy: 0.7241 9/10 [==========================>...] - ETA: 12s - loss: 0.5975 - accuracy: 0.723110/10 [==============================] - ETA: 0s - loss: 0.5930 - accuracy: 0.7258 slurmstepd: error: *** JOB 3178412 ON compute-5-0-5 CANCELLED AT 2021-01-04T13:09:49 DUE TO TIME LIMIT ***
+/var/slurm_spool/job218116/slurm_script: line 39: python: command not found
+Linux idun-06-03 4.18.0-193.el8.x86_64 #1 SMP Fri May 8 10:59:10 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux

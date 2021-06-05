@@ -4,7 +4,7 @@
 #SBATCH --account=share-ie-idi
 #SBATCH --time=02:00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks-per-node=2
 #SBATCH --gres=gpu:V100:1
 
 # Memory can be left to default
@@ -16,6 +16,7 @@
 module purge 
 module load GCC/8.3.0
 module load CUDA/10.1.243
+module load OpenMPI/3.1.4
 module load cuDNN/7.6.4.38
 module load Python/3.7.4
 module list
